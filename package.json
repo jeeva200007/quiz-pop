@@ -1,9 +1,12 @@
 {
+  "homepage":"http//:jeeva200007.github.io/quiz-pop",
   "name": "knowledgehut-js-starter",
   "version": "2.0.2",
   "description": "A starter kit for building web applications by KnowledgeHut upGrad for the JavaScript and FullStack Programs",
   "scripts": {
     "dev": "npx vite serve --host",
+    "predeploy": "npm run build",
+    "deploy":"gh-phages -d build",
     "build": "npx vite build --emptyOutDir",
     "preview": "npx vite preview --host"
   },
